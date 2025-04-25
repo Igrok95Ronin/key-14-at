@@ -1,0 +1,43 @@
+.spec {
+  margin-top: 50px;
+}
+.spec__box {
+}
+.spec__title {
+  @include h2Title;
+}
+.spec__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+.spec__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+.spec__imgWrp {
+  max-width: 200px;
+  max-height: 200px;
+}
+.spec__img {
+  width: 100%;
+  aspect-ratio: 1;
+}
+.spec__content {
+  background-color: #2360b3;
+  color: #fff;
+  padding: 20px;
+}
+.spec__name {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.spec__text {
+  line-height: 20px;
+}
