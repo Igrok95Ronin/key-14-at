@@ -121,7 +121,7 @@ body {
   margin: 0;
 }
 @mixin h2Title {
-  font-size: clamp(28px, 5vw, 30px);
+  font-size: clamp(26px, 5vw, 28px);
   font-weight: 600;
   margin: 0;
   background-color: var(--mainColor);
