@@ -1,0 +1,42 @@
+.fast {
+  margin-top: 50px;
+}
+.fast__box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.fast__left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.fast__title {
+  @include h2Title;
+}
+.fast__text {
+  line-height: 20px;
+}
+.fast__right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fast__imgWrp {
+  max-width: 100%;
+  height: auto;
+}
+.fast__img {
+  width: 100%;
+  height: 100%;
+}
+.fast__txt {
+  margin-top: 5px;
+}
+.fast__btnWrp {
+  text-align: center;
+  margin-top: 20px;
+}
+.fast__btn {
+  @include btn;
+}
