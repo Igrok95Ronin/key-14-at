@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+.container {
+  max-width: var(--maxWidth);
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.containerP0 {
+  max-width: var(--maxWidth);
+  margin: 0 auto;
+  padding: 0;
+}
+body {
+  margin: auto;
+  padding: 0;
+  font: 16px Helvetica, Arial, sans-serif;
+  max-width: 1920px;
+  min-width: 320px;
+  color: #000;
+}
+
+:root {
+  --maxWidth: 1200px;
+  --btnColorFixed: #fed529;
+  --mainColor: #fed529;
+}
+
+@mixin h1Title {
+  font-weight: 700;
+  font-size: clamp(30px, 5vw, 35px);
+  margin: 0;
+}
+@mixin h2Title {
+  font-size: clamp(28px, 5vw, 30px);
+  font-weight: 600;
+  margin: 0;
+  background-color: var(--mainColor);
+  color: #000;
+  padding: 5px 50px 5px 20px;
+  width: fit-content;
+  clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
+  margin-bottom: 20px;
+}
+@mixin btn {
+  background-color: var(--mainColor);
+  color: #2f3841;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 30px;
+  width: 250px;
+  padding: 15px 30px 10px 50px;
+  border-radius: 10px;
+  transition: 0.3s;
+  border: 2px solid #2f3841;
+  position: relative;
+  &::after {
+    content: "Jetzt anrufen – wir sind in 20 Minuten da!";
+    position: absolute;
+    background-image: url("../img/arrows.png");
+    background-size: contain;
+    background-position: 4% 50%;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 8px;
+    left: 5px;
+    top: 5px;
+    transform: translateY(-0%);
+  }
+  span {
+    position: relative;
+    width: 100%;
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/tel2.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 25px;
+      aspect-ratio: 1;
+      left: -35px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  &:hover {
+    background-color: #e4bd23;
+    color: #2f3841;
+  }
+}
+
+@mixin btn2 {
+  color: #2f3841;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 20px;
+  padding: 10px 30px 10px 50px;
+  border-radius: 20px;
+  transition: 0.3s;
+  border: 2px solid #2360b3;
+  span {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/tel.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 25px;
+      aspect-ratio: 1;
+      left: -35px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  &:hover {
+    background-color: #f0efed;
+    color: #2f3841;
+  }
+}

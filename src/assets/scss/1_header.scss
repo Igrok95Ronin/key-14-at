@@ -1,0 +1,102 @@
+.header {
+  margin-bottom: 50px;
+}
+.header__box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.header__left {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.header__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+}
+.header__title {
+  @include h1Title;
+}
+.header__ul {
+  font-weight: 700;
+  line-height: 25px;
+}
+.header__inner > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.header__googleIcon {
+  width: 35px;
+}
+.header__stars {
+  width: 100px;
+}
+.header__number {
+}
+.header__txt {
+  font-weight: 600;
+}
+.header__btn-Wrapper {
+}
+.header__btnHeader {
+  @include btn2;
+}
+.header__img {
+  background-image: url("../../assets/img/main1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 77%;
+  clip-path: polygon(30% 0%, 100% 0%, 100% 100%, 0% 100%);
+  min-width: 200px;
+}
+
+.header__right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.header__subTitle {
+  @include h2Title;
+}
+.header__txt2 {
+  line-height: 20px;
+}
+.header__wrapper2 {
+  border: dashed 2px #2f3841;
+  border-radius: 20px;
+  padding: 30px 20px 10px 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.header__commentStars {
+  width: 80px;
+}
+.header__message {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/comment1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    left: -60px;
+    top: -40px;
+  }
+}
+.header__name {
+  font-weight: 700;
+}
+.header__btnWrp2 {
+  text-align: center;
+}
+.header__btn {
+  @include btn;
+}
