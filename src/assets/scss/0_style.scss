@@ -117,8 +117,10 @@ body {
 
 @mixin h1Title {
   font-weight: 700;
-  font-size: clamp(30px, 5vw, 35px);
+  font-size: clamp(25px, 5vw, 35px);
   margin: 0;
+  margin-top: 10px;
+  padding: 0 10px;
 }
 @mixin h2Title {
   font-size: clamp(26px, 5vw, 28px);
@@ -182,7 +184,7 @@ body {
   color: #2f3841;
   font-weight: 700;
   letter-spacing: 1px;
-  font-size: 20px;
+  font-size: 17px;
   padding: 10px 30px 10px 50px;
   border-radius: 20px;
   transition: 0.3s;

@@ -1,11 +1,33 @@
-@media(max-width: 500px) {
-    .btnFixedD {
-        display: none;
-    }
-    .btnFixed {
-        display: block;
-    }
-    footer {
-        margin-bottom: 60px;
-    }
+@media (max-width: 840px) {
+  .header__box {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 767px) {
+  .call__box,
+  .yourArea__box,
+  .spec__wrapper,
+  .fast__box,
+  .night__box,
+  .cash__box,
+  .reliable__box {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 500px) {
+  .btnFixedD {
+    display: none;
+  }
+  .btnFixed {
+    display: block;
+  }
+  footer {
+    margin-bottom: 80px;
+  }
+  .header__left {
+    gap: 0;
+  }
+  .header__img {
+    min-width: 145px;
+  }
 }

@@ -29,6 +29,7 @@
   line-height: 20px;
   position: relative;
   padding-left: 50px;
+  padding-right: 10px;
   &::before {
     content: "";
     position: absolute;
@@ -44,4 +45,5 @@
 }
 .cash__txt {
   line-height: 20px;
+  padding: 0 10px;
 }

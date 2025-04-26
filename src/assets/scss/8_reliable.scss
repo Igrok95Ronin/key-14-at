@@ -16,11 +16,17 @@
 }
 .reliable__txt {
   line-height: 20px;
+  padding: 0 10px;
 }
 .reliable__ul {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  padding: 0 10px;
+  li{
+    list-style: disc;
+    list-style-position: inside;
+  }
 }
 .reliable__right {
 }

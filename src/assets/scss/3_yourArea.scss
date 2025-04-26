@@ -22,6 +22,7 @@
 .yourArea__textCheck2 {
   position: relative;
   padding-left: 50px;
+  padding-right: 10px;
   &::before {
     content: "";
     position: absolute;
@@ -35,9 +36,7 @@
     transform: translateY(-50%);
   }
 }
-.header__right {
-  padding: 0 10px;
-}
+
 .header__wrapper2 {
 }
 .header__commentStars {
