@@ -1,0 +1,25 @@
+.night {
+  margin-top: 50px;
+}
+.night__box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.night__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.night__title {
+  @include h2Title;
+}
+.night__txt {
+  line-height: 20px;
+}
+.night__txtLine {
+  line-height: 20px;
+  border-left: 4px solid #2360b3;
+  padding-left: 10px;
+  margin: 0 10px;
+}
